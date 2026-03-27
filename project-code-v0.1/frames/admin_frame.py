@@ -1,41 +1,38 @@
 import tkinter as tk
-from tkinter import messagebox
-from config import (BG_LIGHT, BG_CARD, TEXT_DARK, FONT_TITLE,
-                    FONT_SUB, ACCENT, set_bg)
-from widgets import rounded_btn, grid_btn, bell_header
+from config import (light_green, card_green, dark_text, title_font,
+                    subtitle_font, red, set_background)
+from widgets import simple_button, icon_button, bell_header
 from models import Admin
 
 
 class AdminFrame(tk.Frame):
     def __init__(self, master, admin: Admin):
-        super().__init__(master, bg=BG_LIGHT)
+        super().__init__(master, bg=light_green)
         self.admin = admin
-        self._build()
+        self.build()
 
-    def _build(self):
-        set_bg(self)
+    def build(self):
+        set_background(self)
         bell_header(self)
 
-        tk.Label(self, text="Διαχείριση\nΣυστήματος", font=FONT_TITLE,
-                 bg=BG_LIGHT, fg=TEXT_DARK, justify="center").pack(pady=(10, 16))
+        tk.Label(self, text="Διαχείριση\nΣυστήματος", font=title_font,
+                 bg=light_green, fg=dark_text, justify="center").pack(pady=(10, 16))
 
-        stats = tk.Frame(self, bg=BG_CARD)
-        stats.pack(padx=30, fill="x", pady=6, ipady=10)
-        tk.Label(stats, text=f"Χρήστες: {self.admin.get_total_users()}",
-                 font=FONT_SUB, bg=BG_CARD, fg=TEXT_DARK).pack(pady=4)
-        tk.Label(stats, text=f"Νοσοκομεία: {self.admin.get_total_hospitals()}",
-                 font=FONT_SUB, bg=BG_CARD, fg=TEXT_DARK).pack(pady=4)
-        tk.Label(stats, text="Alerts: 2",
-                 font=FONT_SUB, bg=BG_CARD, fg=ACCENT).pack(pady=4)
+        stats_box = tk.Frame(self, bg=card_green)
+        stats_box.pack(padx=30, fill="x", pady=6, ipady=10)
+        tk.Label(stats_box, text=f"Χρήστες: {self.admin.get_total_users()}",
+                 font=subtitle_font, bg=card_green, fg=dark_text).pack(pady=4)
+        tk.Label(stats_box, text=f"Νοσοκομεία: {self.admin.get_total_hospitals()}",
+                 font=subtitle_font, bg=card_green, fg=dark_text).pack(pady=4)
+        tk.Label(stats_box, text="Alerts: 2",
+                 font=subtitle_font, bg=card_green, fg=red).pack(pady=4)
 
-        grid = tk.Frame(self, bg=BG_LIGHT)
-        grid.pack(padx=20, pady=16, fill="x")
-        grid.columnconfigure(0, weight=1)
-        grid.columnconfigure(1, weight=1)
+        button_grid = tk.Frame(self, bg=light_green)
+        button_grid.pack(padx=20, pady=16, fill="x")
+        button_grid.columnconfigure(0, weight=1)
+        button_grid.columnconfigure(1, weight=1)
 
-        grid_btn(grid, "Πιστοποίηση\nΦορέων",  "verify",  0, 0,
-                 lambda: messagebox.showinfo("", "Πιστοποίηση φορέων"))
-        grid_btn(grid, "Αναφορές /\nΠαράπονα", "reports", 0, 1,
-                 lambda: messagebox.showinfo("", "Αναφορές & Παράπονα"))
+        icon_button(button_grid, "Πιστοποίηση\nΦορέων",  "verify",  0, 0, lambda: None)
+        icon_button(button_grid, "Αναφορές /\nΠαράπονα", "reports", 0, 1, lambda: None)
 
-        rounded_btn(self, "Αποσύνδεση", self.master.show_login).pack(pady=20)
+        simple_button(self, "Αποσύνδεση", self.master.show_login).pack(pady=20)
