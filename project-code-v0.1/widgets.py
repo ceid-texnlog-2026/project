@@ -1,74 +1,73 @@
 import tkinter as tk
 from tkinter import ttk
-from config import (BG_CARD, BG_LIGHT, BTN_DARK, BTN_TEXT,
-                    TEXT_DARK, TEXT_MID, FONT_BTN, FONT_BODY,
-                    FONT_SMALL, load_icon, set_bg)
+from config import (card_green, light_green, dark_green, white,
+                    dark_text, mid_text, button_font, normal_font,
+                    small_font, get_icon)
 
 
-def rounded_btn(parent, text, command, bg=BTN_DARK, fg=BTN_TEXT, width=22):
-    return tk.Button(parent, text=text, command=command,
-                     bg=bg, fg=fg, font=FONT_BTN,
+def simple_button(parent, text, action, color=dark_green, text_color=white, width=22):
+    return tk.Button(parent, text=text, command=action,
+                     bg=color, fg=text_color, font=button_font,
                      relief="flat", bd=0, cursor="hand2",
                      width=width, pady=8)
 
 
-def field_entry(parent, placeholder):
-    frame = tk.Frame(parent, bg=BG_CARD, bd=0)
-    entry = tk.Entry(frame, font=FONT_BODY, bg=BG_CARD, fg=TEXT_MID,
-                     relief="flat", bd=0, width=28,
-                     insertbackground=TEXT_DARK)
-    entry.insert(0, placeholder)
+def input_field(parent, placeholder):
+    frame = tk.Frame(parent, bg=card_green, bd=0)
+    field = tk.Entry(frame, font=normal_font, bg=card_green, fg=mid_text,
+                     relief="flat", bd=0, width=28, insertbackground=dark_text)
+    field.insert(0, placeholder)
 
-    def on_focus_in(e):
-        if entry.get() == placeholder:
-            entry.delete(0, tk.END)
-            entry.config(fg=TEXT_DARK)
+    def on_click(e):
+        if field.get() == placeholder:
+            field.delete(0, tk.END)
+            field.config(fg=dark_text)
             if "Κωδικός" in placeholder:
-                entry.config(show="*")
+                field.config(show="*")
 
-    def on_focus_out(e):
-        if entry.get() == "":
-            entry.insert(0, placeholder)
-            entry.config(fg=TEXT_MID, show="")
+    def on_leave(e):
+        if field.get() == "":
+            field.insert(0, placeholder)
+            field.config(fg=mid_text, show="")
 
-    entry.bind("<FocusIn>",  on_focus_in)
-    entry.bind("<FocusOut>", on_focus_out)
+    field.bind("<FocusIn>", on_click)
+    field.bind("<FocusOut>", on_leave)
     frame.pack(fill="x", padx=30, pady=6, ipady=10, ipadx=10)
-    entry.pack(padx=10, pady=4)
-    return entry, frame
+    field.pack(padx=10, pady=4)
+    return field, frame
 
 
-def grid_btn(parent, text, icon_key, row, col, command):
-    f = tk.Frame(parent, bg=BG_CARD, cursor="hand2")
-    f.grid(row=row, column=col, padx=8, pady=8, sticky="nsew", ipadx=6, ipady=14)
+def icon_button(parent, text, icon_name, row, col, action):
+    frame = tk.Frame(parent, bg=card_green, cursor="hand2")
+    frame.grid(row=row, column=col, padx=8, pady=8, sticky="nsew", ipadx=6, ipady=14)
 
-    kind, val = load_icon(icon_key, size=40)
+    kind, value = get_icon(icon_name, size=40)
     if kind == "image":
-        lbl = tk.Label(f, image=val, bg=BG_CARD)
-        lbl.image = val
+        label = tk.Label(frame, image=value, bg=card_green)
+        label.image = value
     else:
-        lbl = tk.Label(f, text=val, font=("Helvetica", 13, "bold"),
-                       bg=BG_CARD, fg=TEXT_MID)
-    lbl.pack(pady=(10, 2))
+        label = tk.Label(frame, text=value, font=("Poppins", 13, "bold"),
+                         bg=card_green, fg=mid_text)
+    label.pack(pady=(10, 2))
 
-    tk.Label(f, text=text, font=("Poppins", 10, "bold"),
-             bg=BG_CARD, fg=TEXT_DARK, wraplength=120,
+    tk.Label(frame, text=text, font=("Poppins", 10, "bold"),
+             bg=card_green, fg=dark_text, wraplength=120,
              justify="center").pack(pady=(0, 10))
 
-    f.bind("<Button-1>", lambda e: command())
-    for w in f.winfo_children():
-        w.bind("<Button-1>", lambda e: command())
-    return f
+    frame.bind("<Button-1>", lambda e: action())
+    for w in frame.winfo_children():
+        w.bind("<Button-1>", lambda e: action())
+    return frame
 
 
 def bell_header(parent):
-    header = tk.Frame(parent, bg=BG_LIGHT)
+    header = tk.Frame(parent, bg=light_green)
     header.pack(fill="x", padx=16, pady=(10, 0))
-    kind, val = load_icon("bell", size=24)
+    kind, value = get_icon("bell", size=24)
     if kind == "image":
-        lbl = tk.Label(header, image=val, bg=BG_LIGHT, cursor="hand2")
-        lbl.image = val
+        label = tk.Label(header, image=value, bg=light_green, cursor="hand2")
+        label.image = value
     else:
-        lbl = tk.Label(header, text=val, font=("Poppins", 14, "bold"),
-                       bg=BG_LIGHT, fg=TEXT_DARK, cursor="hand2")
-    lbl.pack(side="right")
+        label = tk.Label(header, text=value, font=("Poppins", 14, "bold"),
+                         bg=light_green, fg=dark_text, cursor="hand2")
+    label.pack(side="right")

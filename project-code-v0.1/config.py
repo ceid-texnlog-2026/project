@@ -1,76 +1,62 @@
 from pathlib import Path
+import tkinter as tk
+from PIL import Image, ImageTk
 
-try:
-    from PIL import Image, ImageTk
-    PIL_AVAILABLE = True
-except ImportError:
-    PIL_AVAILABLE = False
+assets_folder = Path(__file__).parent / "assets"
 
-ASSETS_DIR = Path(__file__).parent / "assets"
+light_green = "#c8d9d6"
+card_green = "#a8c5bf"
+dark_green = "#4a7c74"
+white = "#ffffff"
+dark_text = "#1e2d2b"
+mid_text = "#3a5a54"
+red = "#e05a3a"
 
-#colors
-BG_LIGHT = "#c8d9d6"
-BG_CARD  = "#a8c5bf"
-BTN_DARK = "#4a7c74"
-BTN_TEXT = "#ffffff"
-TEXT_DARK = "#1e2d2b"
-TEXT_MID  = "#3a5a54"
-ACCENT    = "#e05a3a"
+title_font = ("Arial", 20, "bold")
+subtitle_font = ("Arial", 13, "bold")
+normal_font = ("Arial", 11)
+button_font = ("Arial", 12, "bold")
+small_font = ("Arial", 10)
 
-#fonts
-FONT_TITLE = ("Poppins", 20, "bold")
-FONT_SUB   = ("Poppins", 13, "bold")
-FONT_BODY  = ("Poppins", 11)
-FONT_BTN   = ("Poppins", 12, "bold")
-FONT_SMALL = ("Poppins", 10)
-
-#icons
-ICONS = {
-    "logo":         ("logo.png",          "[LOGO]"),
-    "bell":         ("bell.png",          "[!]"),
-    "heart":        ("heart.png",         "[+]"),
-    "calendar":     ("calendar.png",      "[ΗΜ]"),
-    "appointment":  ("appointment.png",   "[ΡΑΝ]"),
-    "upload":       ("upload.png",        "[UP]"),
-    "history":      ("history.png",       "[ΙΣΤ]"),
-    "availability": ("availability.png",  "[ΔΙΑ]"),
-    "urgent":       ("alert.png",         "[!!!]"),
-    "donation_reg": ("donation_reg.png",  "[ΚΑΤ]"),
-    "inventory":    ("inventory.png",     "[ΑΠΟ]"),
-    "certificate":  ("certificate.png",   "[ΒΕΒ]"),
-    "verify":       ("verify.png",        "[ΠΙΣ]"),
-    "reports":      ("report.png",        "[ΑΝΑ]"),
+icon_files = {
+    "logo":         "logo.png",
+    "bell":         "bell.png",
+    "heart":        "heart.png",
+    "calendar":     "calendar.png",
+    "appointment":  "appointment.png",
+    "upload":       "upload.png",
+    "history":      "history.png",
+    "availability": "availability.png",
+    "urgent":       "alert.png",
+    "donation_reg": "donation_reg.png",
+    "inventory":    "inventory.png",
+    "certificate":  "certificate.png",
+    "verify":       "verify.png",
+    "reports":      "report.png",
 }
 
-_icon_cache: dict = {}
-_bg_image = None
+background_photo = None
 
-def load_icon(key: str, size: int = 40):
-    cache_key = (key, size)
-    if cache_key in _icon_cache:
-        return _icon_cache[cache_key]
 
-    filename, fallback = ICONS.get(key, ("", key))
-    path = ASSETS_DIR / filename
-
-    if PIL_AVAILABLE and path.exists():
+def get_icon(name, size=40):
+    path = assets_folder / icon_files.get(name, "")
+    if path.exists():
         img = Image.open(path).convert("RGBA").resize((size, size), Image.LANCZOS)
         photo = ImageTk.PhotoImage(img)
-        _icon_cache[cache_key] = ("image", photo)
         return ("image", photo)
+    return ("text", name)
 
-    _icon_cache[cache_key] = ("text", fallback)
-    return ("text", fallback)
 
 def load_background():
-    global _bg_image
-    bg_path = ASSETS_DIR / "background.png"
-    if PIL_AVAILABLE and bg_path.exists():
-        img = Image.open(bg_path).resize((400, 700), Image.LANCZOS)
-        _bg_image = ImageTk.PhotoImage(img)
+    global background_photo
+    path = assets_folder / "background.png"
+    if path.exists():
+        img = Image.open(path).resize((400, 700), Image.LANCZOS)
+        background_photo = ImageTk.PhotoImage(img)
 
-def set_bg(frame):
-    if _bg_image:
-        lbl = __import__("tkinter").Label(frame, image=_bg_image)
-        lbl.place(x=0, y=0, relwidth=1, relheight=1)
-        lbl.lower()
+
+def set_background(frame):
+    if background_photo:
+        label = tk.Label(frame, image=background_photo)
+        label.place(x=0, y=0, relwidth=1, relheight=1)
+        label.lower()

@@ -99,4 +99,3 @@ class Admin(User):
 
     def get_total_hospitals(self) -> int:
         return len(self.hospitals)
-s
