@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="7bGxoMJMt2cP_D-LvSCZ">
+    <mxGraphModel dx="1414" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dceTiLdSfTXe0pexUH_3-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Εθελοντής αιμοδότης" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-7" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dceTiLdSfTXe0pexUH_3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-3" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="οθόνη προφίλ" vertex="1">
+          <mxGeometry height="80" width="100" x="210" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-8" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dceTiLdSfTXe0pexUH_3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-4" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Ιστορικο αιμοδοσιών" vertex="1">
+          <mxGeometry height="80" width="100" x="210" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-5" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Λεπτομέρειες αιμοδοσίας" vertex="1">
+          <mxGeometry height="80" width="100" x="210" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-13" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dceTiLdSfTXe0pexUH_3-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-16" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.871;exitY=0.911;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="340" as="sourcePoint" />
+            <mxPoint x="475" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-18" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-6" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="διαχείριση ιστορικου αιμοδοσιωμ" vertex="1">
+          <mxGeometry height="90" width="70" x="400" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-9" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.543;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" target="dceTiLdSfTXe0pexUH_3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-10" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="βαση δεδομένων" vertex="1">
+          <mxGeometry height="80" width="80" x="550" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-11" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="βασικά σταστικά αιμοδοτη" vertex="1">
+          <mxGeometry height="80" width="80" x="550" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-12" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;" target="dceTiLdSfTXe0pexUH_3-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-21" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-15" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="μήνυμα σφαλματος" vertex="1">
+          <mxGeometry height="80" width="100" x="390" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="εναλλακτική ροη 1: δεν υπαρχει διαθεσιμο ιστορικο αιμοδοσιων" vertex="1">
+          <mxGeometry height="40" width="130" x="470" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="εναλλακτική ροή 2: πρόβλημα στην φορτωση λεπτομερειων αιμοδοσιας" vertex="1">
+          <mxGeometry height="30" width="60" x="320" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-22" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;" target="dceTiLdSfTXe0pexUH_3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-23" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.08;entryY=0.475;entryDx=0;entryDy=0;entryPerimeter=0;" target="dceTiLdSfTXe0pexUH_3-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dceTiLdSfTXe0pexUH_3-24" edge="1" parent="1" source="dceTiLdSfTXe0pexUH_3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" target="dceTiLdSfTXe0pexUH_3-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
