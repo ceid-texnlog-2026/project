@@ -1,0 +1,324 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="q2f3d1pvpqZ4dP3iH7uw">
+    <mxGraphModel dx="2098" dy="1237" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Admin" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-2" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Εμφάνιση αιτήματος πιστοποιησης" vertex="1">
+          <mxGeometry height="100" width="90" x="395" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-3" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Άνοιγμα αιτήματος" vertex="1">
+          <mxGeometry height="80" width="100" x="220" y="209" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-4" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.9;entryY=0.163;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-10" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HmBOKhPHXv_uTu2TRHFg-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-46" connectable="0" parent="HmBOKhPHXv_uTu2TRHFg-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Επιτυχία" vertex="1">
+          <mxGeometry relative="1" x="0.7923" y="1" as="geometry">
+            <mxPoint x="-6" y="-195" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-5" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Διασταύρωση με εξωτερικό μητρώο" vertex="1">
+          <mxGeometry height="100" width="90" x="400" y="199" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-6" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.021;entryY=0.504;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-7" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="Εξωτερικό Μητρώο νοσοκομείων/δομών" vertex="1">
+          <mxGeometry height="90" width="90" x="540" y="109" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-8" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.994;entryY=0.497;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-9" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Εμφάνιση δικαιολογητικών" vertex="1">
+          <mxGeometry height="100" width="90" x="400" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-74" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;exitX=0.915;exitY=0.79;exitDx=0;exitDy=0;exitPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-73" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="613" />
+              <mxPoint x="390" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-75" connectable="0" parent="HmBOKhPHXv_uTu2TRHFg-74" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Απόρριψη" vertex="1">
+          <mxGeometry relative="1" x="-0.0721" y="1" as="geometry">
+            <mxPoint x="-62" y="-36" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-11" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Αποδοχή δικαιολογητικών" vertex="1">
+          <mxGeometry height="85" width="110" x="218" y="546" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-23" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HmBOKhPHXv_uTu2TRHFg-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-14" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Εμφάνιση τελικής αποδοχή" vertex="1">
+          <mxGeometry height="100" width="90" x="398" y="663" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-16" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Τελική αποδοχή αίτησης" vertex="1">
+          <mxGeometry height="80" width="100" x="218" y="673" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-18" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.02;entryY=0.497;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-21" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="Στοιχεία κέντρου αιμοδοσίας" vertex="1">
+          <mxGeometry height="100" width="99" x="712" y="879" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-26" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HmBOKhPHXv_uTu2TRHFg-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-55" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.439;exitY=0.945;exitDx=0;exitDy=0;exitPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="758" />
+              <mxPoint x="600" y="933" />
+            </Array>
+            <mxPoint x="600" y="831.888765156986" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-22" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Δημιουργία λογαριασμού φορέα" vertex="1">
+          <mxGeometry height="100" width="90" x="558" y="663" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-25" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Αποστολή προσωρινων credentials στον εκρπόσωπο&amp;nbsp;" vertex="1">
+          <mxGeometry height="100" width="90" x="718" y="663" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-29" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.477;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-30" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.028;entryY=0.506;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="514" />
+              <mxPoint x="190" y="589" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-31" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.021;entryY=0.496;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-32" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Σύνδεση ως φορέας" vertex="1">
+          <mxGeometry height="80" width="100" x="220" y="848" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-33" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Αίτημα αλλαγής κωδικού" vertex="1">
+          <mxGeometry height="90" width="80" x="400" y="838" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-34" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.556;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-35" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Ειαγωγή νέου κωδικού&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="100" x="220" y="958" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-36" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.895;entryY=0.102;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-41" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1068" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-37" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Ενημέρωση κωδικού&amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="80" x="400" y="953" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-38" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.074;entryY=0.505;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-39" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.541;entryY=1.081;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="596" y="998" />
+              <mxPoint x="596" y="1000" />
+              <mxPoint x="766" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-40" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Ενημέρωση φορέα ως πιστοποιημένου&amp;nbsp;" vertex="1">
+          <mxGeometry height="100" width="100" x="390" y="1059" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-42" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.669;entryY=1.056;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="1118" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-43" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="&lt;div&gt;Εκπρόσωπος&amp;nbsp;&lt;/div&gt;&lt;div&gt;φορέα&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="90" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-44" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-43" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.026;entryY=0.491;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-45" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-43" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.062;entryY=0.469;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-49" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Ενημέρωση αποτυχίας διασταύρωσης" vertex="1">
+          <mxGeometry height="100" width="90" x="546" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-50" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.041;entryY=0.28;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-60" connectable="0" parent="HmBOKhPHXv_uTu2TRHFg-50" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Αποτυχία&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2101" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-54" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.467;entryY=0.945;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="761.7399999999998" y="830.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-58" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="340" />
+              <mxPoint x="190" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-59" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Αίτημα για επικαιροποιημένα στοιχεία&amp;nbsp;" vertex="1">
+          <mxGeometry height="110" width="110" x="557" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-61" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="500" />
+              <mxPoint x="200" y="350" />
+              <mxPoint x="531" y="350" />
+              <mxPoint x="531" y="380" />
+            </Array>
+            <mxPoint x="562" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-64" connectable="0" parent="HmBOKhPHXv_uTu2TRHFg-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Αίτημα επικαιροποίησης στοιχείων" vertex="1">
+          <mxGeometry relative="1" x="-0.0793" as="geometry">
+            <mxPoint x="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-62" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.028;entryY=0.488;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="410" />
+              <mxPoint x="820" y="79" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-65" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Απόρριψη αίτησης και ενημέρωση φορέα&amp;nbsp;" vertex="1">
+          <mxGeometry height="89" width="80" x="558" y="449" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-66" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.022;entryY=0.46;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-65">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="505" />
+              <mxPoint x="210" y="370" />
+              <mxPoint x="520" y="370" />
+              <mxPoint x="520" y="490" />
+              <mxPoint x="556" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-67" connectable="0" parent="HmBOKhPHXv_uTu2TRHFg-66" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Απόρριψη αίτησης" vertex="1">
+          <mxGeometry relative="1" x="-0.1978" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-70" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.999;entryY=0.51;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-71" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.062;entryY=0.317;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.866;exitY=0.885;exitDx=0;exitDy=0;exitPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-72" connectable="0" parent="HmBOKhPHXv_uTu2TRHFg-71" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Αποδοχή&amp;nbsp;" vertex="1">
+          <mxGeometry relative="1" x="-0.4577" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-73" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Κατάσταση αίτησης &quot;Εκκρεμεί" vertex="1">
+          <mxGeometry height="100" width="90" x="548" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-77" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="Στοιχεία Αίτησης" vertex="1">
+          <mxGeometry height="100" width="99" x="680" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-80" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.732;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.729;exitY=0.172;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-77">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="753" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-81" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.518;entryY=1.1;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-82" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.972;entryY=0.585;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="205" />
+              <mxPoint x="550" y="258" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-88" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.035;exitY=0.765;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.753;entryY=0.202;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="785" y="499" />
+              <mxPoint x="785" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-94" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-93" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="680" />
+              <mxPoint x="840" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-95" connectable="0" parent="HmBOKhPHXv_uTu2TRHFg-94" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Πέρας 5&amp;nbsp;&lt;br&gt;ημερών" vertex="1">
+          <mxGeometry relative="1" x="-0.3584" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-83" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Ενημέρωση φορέα για υποβολή νέων δικαιολογητικών&amp;nbsp;" vertex="1">
+          <mxGeometry height="116" width="110" x="760" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-84" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.67;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-85" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Υποβολή νέων δικαιολογητικών" vertex="1">
+          <mxGeometry height="90" width="110" x="220" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-86" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-43" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.023;entryY=0.472;entryDx=0;entryDy=0;entryPerimeter=0;" target="HmBOKhPHXv_uTu2TRHFg-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-87" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.744;entryY=0.949;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-89">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="922" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-89" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Ενημέρωση&amp;nbsp; δικαιολογητικών&amp;nbsp;" vertex="1">
+          <mxGeometry height="116" width="110" x="840" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-91" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.844;entryY=1.034;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-98" edge="1" parent="1" source="HmBOKhPHXv_uTu2TRHFg-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="HmBOKhPHXv_uTu2TRHFg-77">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="802" />
+              <mxPoint x="960" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HmBOKhPHXv_uTu2TRHFg-93" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Απόρριψη αίτησης και ενημέρωηση φορέα" vertex="1">
+          <mxGeometry height="92" width="80" x="800" y="756" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
