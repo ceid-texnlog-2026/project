@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram name="Domain Model" id="domain-model-blood-appointment">
+    <mxGraphModel dx="1680" dy="892" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MenuScreen" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=8;fontSize=13" value="&lt;b&gt;MenuScreen&lt;/b&gt;&lt;hr&gt;+connection()&lt;br&gt;+AppointmentSearch()" vertex="1">
+          <mxGeometry height="145" width="230" x="80" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SearchResultScreen" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=8;fontSize=13" value="&lt;b&gt;SearchResultScreen&lt;/b&gt;&lt;hr&gt;&lt;div&gt;+showResults()&lt;/div&gt;&lt;div&gt;+getAvailability()&lt;/div&gt;+displayNoAppointmentsMessage()&lt;br&gt;+suggestOtherCentersOrDates()" vertex="1">
+          <mxGeometry height="170" width="280" x="1230" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ManageAppointmentSearchClass" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=8;fontSize=13" value="&lt;b&gt;ManageAppointmentSearchClass&lt;/b&gt;&lt;hr&gt;+centersAndDates()&lt;br&gt;&lt;div&gt;+CentersAndDates()&lt;/div&gt;&lt;div&gt;+chooseDonationCenter()&lt;/div&gt;&lt;div&gt;+ChooseDateAndHour()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="300" x="395" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="DBManager" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=8;fontSize=13" value="&lt;b&gt;DBManager&lt;/b&gt;&lt;hr&gt;+queryCentersAndDates()&lt;br&gt;+checkAvailability()&lt;br&gt;+checkDonationInterval()&lt;br&gt;+updateProfile()" vertex="1">
+          <mxGeometry height="155" width="290" x="780" y="115" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
