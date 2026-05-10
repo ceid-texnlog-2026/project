@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="domain-model-availability" name="Domain Model">
+    <mxGraphModel dx="1638" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MenuScreen" parent="1" style="swimlane;html=1;whiteSpace=wrap;rounded=0;shadow=0;collapsible=0;childLayout=stackLayout;horizontal=1;startSize=40;container=0;" value="MenuScreen" vertex="1">
+          <mxGeometry height="120" width="260" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6IP4oMD7T9LyIFHl4Nzo-10" parent="MenuScreen" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;+availabilityManagement()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AvailabilityScreen" parent="1" style="swimlane;html=1;whiteSpace=wrap;rounded=0;shadow=0;collapsible=0;horizontal=1;startSize=40;container=0;" value="&lt;br&gt;&lt;b&gt;AvailabilityScreen&lt;/b&gt;&lt;hr&gt;" vertex="1">
+          <mxGeometry height="140" width="300" x="630" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6IP4oMD7T9LyIFHl4Nzo-14" parent="AvailabilityScreen" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+displayCurrentAvailability()&lt;br&gt;+chooseAvailableForEmergency()&lt;br&gt;&lt;div&gt;+chooseNotAvailable()&lt;/div&gt;&lt;div&gt;+confAvailabilityOn()&lt;/div&gt;&lt;div&gt;+confAvailabilityOff()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="60" x="120" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SuccessScreen" parent="1" style="swimlane;html=1;whiteSpace=wrap;rounded=0;shadow=0;collapsible=0;horizontal=1;startSize=40;container=0;" value="&lt;br&gt;&lt;b&gt;SuccessScreen&lt;/b&gt;&lt;hr&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="40" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ProfileScreen" parent="1" style="swimlane;html=1;whiteSpace=wrap;rounded=0;shadow=0;collapsible=0;horizontal=1;startSize=30;container=0;" value="&lt;br&gt;&lt;b&gt;ProfileScreen&lt;/b&gt;&lt;hr&gt;" vertex="1">
+          <mxGeometry height="110" width="260" x="340" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="k8rIjn5cEcBbHlya0BXh-4" parent="ProfileScreen" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="returnProfile()" vertex="1">
+          <mxGeometry height="30" width="60" x="105" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ManageAvailabilityClass" parent="1" style="swimlane;html=1;whiteSpace=wrap;rounded=0;shadow=0;collapsible=0;horizontal=1;startSize=50;container=0;" value="&lt;br&gt;&lt;b&gt;ManageAvailabilityClass&lt;/b&gt;&lt;hr&gt;" vertex="1">
+          <mxGeometry height="130" width="250" x="350" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6IP4oMD7T9LyIFHl4Nzo-13" parent="ManageAvailabilityClass" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+getCurrentAvailability()&lt;br&gt;+ confirm()&lt;br&gt;+AvailableNotification()&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="100" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NotificationService" parent="1" style="swimlane;html=1;whiteSpace=wrap;rounded=0;shadow=0;collapsible=0;horizontal=1;startSize=50;container=0;" value="&lt;br&gt;&lt;b&gt;NotificationService&lt;/b&gt;&lt;hr&gt;" vertex="1">
+          <mxGeometry height="140" width="280" x="970" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6IP4oMD7T9LyIFHl4Nzo-16" parent="NotificationService" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;+enableEmergencyNotificationa()&lt;/div&gt;&lt;div&gt;+enableDeviceNotifications()&lt;/div&gt;&lt;div&gt;+disableEmergencyNotifications()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DBManager" parent="1" style="swimlane;html=1;whiteSpace=wrap;rounded=0;shadow=0;collapsible=0;horizontal=1;startSize=50;container=0;" value="&lt;b&gt;DBManager&lt;/b&gt;&lt;hr&gt;" vertex="1">
+          <mxGeometry height="130" width="230" x="665" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="k8rIjn5cEcBbHlya0BXh-5" parent="DBManager" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;+queryAvailabilityStatus()&lt;/div&gt;&lt;div&gt;+updateAvailability()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="85" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="k8rIjn5cEcBbHlya0BXh-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="+displaySuccess()" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
