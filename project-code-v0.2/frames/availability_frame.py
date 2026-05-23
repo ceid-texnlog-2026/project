@@ -38,7 +38,7 @@ class AvailabilityFrame(tk.Frame):
                  font=small_font, bg=card_green, fg=mid_text,
                  justify="center", wraplength=280).pack(pady=10)
 
-        # Κουμπί αλλαγής
+      
         self.toggle_btn = simple_button(self, self.get_button_text(), self.confirm_toggle)
         self.toggle_btn.pack(pady=20)
 
