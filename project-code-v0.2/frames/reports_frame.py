@@ -153,7 +153,7 @@ class ReportDetailsScreen(tk.Frame):
         self.report.clarification_requested_at = datetime.now()
         self.db.update_report(self.report)
 
-        # Notify the reported target (persist via DBManager)
+
         target = self.db.find_target_user(self.report.target_type,
                                           self.report.target_identifier)
         if target:
@@ -164,7 +164,6 @@ class ReportDetailsScreen(tk.Frame):
                 "Παρακαλούμε απαντήστε μέσα από το προφίλ σας."
             )
 
-        # Also notify the reporter (donor or hospital)
         reporter = self.db._find_donor_by_id(self.report.reporter_id)
         if reporter is None:
             reporter = self.db._find_hospital_by_id(self.report.reporter_id)
@@ -305,7 +304,7 @@ class ReportResponseScreen(tk.Frame):
                  bg=card_green, fg=mid_text).pack(
                      fill="x", padx=30, pady=(0, 8), ipady=3)
 
-        # Report summary card
+
         card = tk.Frame(self, bg=card_green)
         card.pack(padx=30, fill="x", ipady=8, pady=4)
 
@@ -323,7 +322,7 @@ class ReportResponseScreen(tk.Frame):
                      bg=card_green, fg=dark_text, anchor="e",
                      wraplength=180).pack(side="right")
 
-        # Description
+
         desc_box = tk.Frame(self, bg=card_green)
         desc_box.pack(padx=30, fill="x", ipady=4, pady=4)
         tk.Label(desc_box, text="Περιγραφή καταγγελίας:", font=small_font,
@@ -332,7 +331,7 @@ class ReportResponseScreen(tk.Frame):
                  bg=card_green, fg=dark_text, wraplength=300,
                  justify="left").pack(padx=10, pady=(0, 8), anchor="w")
 
-        # Response input
+
         tk.Label(self, text="Η απάντησή σας:", font=subtitle_font,
                  bg=light_green, fg=dark_text).pack(pady=(8, 4))
 
