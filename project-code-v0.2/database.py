@@ -1,9 +1,3 @@
-"""SQLite persistence layer for RedHope.
-
-The in-memory object model (Donor/Hospital/etc.) remains the source of truth
-during runtime. This module loads it from disk on startup and rewrites the
-relevant rows after each mutation via `save_*` helpers.
-"""
 
 import sqlite3
 import json
@@ -138,17 +132,15 @@ class Database:
         self.conn = sqlite3.connect(DB_PATH, check_same_thread=False)
         self.conn.row_factory = sqlite3.Row
         self.conn.executescript(SCHEMA)
-        # Safe migrations for columns added after initial release
+
         for sql in [
             "ALTER TABLE reports ADD COLUMN clarification_requested_at TEXT",
         ]:
             try:
                 self.conn.execute(sql)
             except sqlite3.OperationalError:
-                pass  # column already exists
+                pass  
         self.conn.commit()
-
-    # ---------- USER PERSISTENCE ----------
 
     def insert_user(self, role: str, user) -> int:
         cur = self.conn.execute(
@@ -219,7 +211,6 @@ class Database:
         ).fetchone()
         return row is not None
 
-    # ---------- APPLICATION PERSISTENCE ----------
 
     def insert_application(self, app) -> int:
         cur = self.conn.execute(
@@ -280,7 +271,6 @@ class Database:
     def load_reports(self):
         return list(self.conn.execute("SELECT * FROM reports"))
 
-    # ---------- APPOINTMENTS ----------
 
     def insert_appointment(self, a, donor_id: int, hospital_id: int) -> int:
         cur = self.conn.execute(
@@ -301,7 +291,6 @@ class Database:
     def load_appointments(self):
         return list(self.conn.execute("SELECT * FROM appointments"))
 
-    # ---------- DONATIONS ----------
 
     def insert_donation(self, d, hospital_id: int) -> int:
         cur = self.conn.execute(
@@ -317,8 +306,6 @@ class Database:
     def load_donations(self):
         return list(self.conn.execute("SELECT * FROM donations"))
 
-    # ---------- MEDICAL DOCUMENTS ----------
-
     def insert_medical_document(self, doc, donor_id: int) -> int:
         cur = self.conn.execute(
             """INSERT INTO medical_documents (donor_id, filename, upload_date,
@@ -332,7 +319,6 @@ class Database:
     def load_medical_documents(self):
         return list(self.conn.execute("SELECT * FROM medical_documents"))
 
-    # ---------- CERTIFICATES ----------
 
     def insert_certificate(self, c) -> int:
         cur = self.conn.execute(
@@ -350,7 +336,6 @@ class Database:
     def load_certificates(self):
         return list(self.conn.execute("SELECT * FROM certificates"))
 
-    # ---------- BLOOD UNITS ----------
 
     def insert_blood_unit(self, u, hospital_id: int) -> int:
         cur = self.conn.execute(
@@ -375,8 +360,6 @@ class Database:
 
     def load_blood_units(self):
         return list(self.conn.execute("SELECT * FROM blood_units"))
-
-    # ---------- NOTIFICATIONS ----------
 
     def insert_notification(self, user_id: int, message: str):
         self.conn.execute(
