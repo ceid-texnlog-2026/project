@@ -46,7 +46,7 @@ class HospitalCertificationApplicationScreen(tk.Frame):
                  font=small_font, bg=light_green, fg=mid_text,
                  justify="center").pack(pady=(0, 8))
 
-        # Auto-prefill from hospital account
+
         tk.Label(inner, text="Όνομα Φορέα", font=small_font,
                  bg=light_green, fg=mid_text).pack(pady=(6, 0))
         self.hospital_name = tk.Entry(inner, font=normal_font, width=30,
