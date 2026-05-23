@@ -28,7 +28,7 @@ class HospitalProfileScreen(tk.Frame):
                  font=title_font, bg=light_green, fg=dark_text,
                  wraplength=340, justify="center").pack(pady=(5, 6))
 
-        # Notification badge
+
         if self.hospital.notifications:
             notif = tk.Frame(self, bg=card_green, cursor="hand2")
             notif.pack(fill="x", padx=20, pady=4, ipady=4)
@@ -45,10 +45,6 @@ class HospitalProfileScreen(tk.Frame):
         else:
             self._build_certified()
 
-        # ----------------------------------------------------------------
-        # Clarification-response banner (UC10 Fix 2 — bidirectional)
-        # Visible to BOTH reporter and reported party
-        # ----------------------------------------------------------------
         clarif_pairs = self.db.get_all_clarification_reports_for_user(self.hospital)
         if clarif_pairs:
             notif_bar = tk.Frame(self, bg=red, cursor="hand2")
@@ -67,16 +63,12 @@ class HospitalProfileScreen(tk.Frame):
                     lambda e, r=first_report, rl=first_role: self._go_respond(r, rl),
                 )
 
-        # ----------------------------------------------------------------
-        # Submit Report button (UC10 Fix 1 — always visible)
-        # ----------------------------------------------------------------
         simple_button(self, "Υποβολή Αναφοράς", self.go_report,
                       color=mid_text).pack(pady=(4, 0))
 
         simple_button(self, "Αποσύνδεση",
                       self.master.show_login).pack(pady=(6, 8))
 
-    # ------------------------------------------------------------------
     def _build_uncertified(self):
         status_card = tk.Frame(self, bg=card_green)
         status_card.pack(padx=30, fill="x", ipady=10, pady=10)
@@ -127,9 +119,6 @@ class HospitalProfileScreen(tk.Frame):
         icon_button(button_grid, "Έκδοση\nΒεβαίωσης", "certificate", 1, 1,
                     self.open_certificate_frame)
 
-    # ------------------------------------------------------------------
-    # Navigation helpers
-    # ------------------------------------------------------------------
 
     def go_apply(self):
         from frames.hospital_certification_frame import (
