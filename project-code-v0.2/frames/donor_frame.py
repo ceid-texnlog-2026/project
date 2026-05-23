@@ -59,8 +59,6 @@ class ProfileScreen(tk.Frame):
         icon_button(button_grid, "Αναφορά", "reports", 1, 1, self.go_report)
         icon_button(button_grid, "Ειδοποιήσ.", "urgent", 1, 2, self.show_notifications)
 
-        # Show "respond to report" banner if admin requested clarification
-        # (works for BOTH reporter and reported party — UC10 Fix 2)
         clarif_pairs = self.db.get_all_clarification_reports_for_user(self.donor)
         if clarif_pairs:
             notif_bar = tk.Frame(self, bg=red, cursor="hand2")
