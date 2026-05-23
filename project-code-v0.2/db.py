@@ -6,8 +6,7 @@ from models import (Donor, Hospital, Admin, Application, Report,
 from database import Database, _parse_date, _parse_datetime
 
 
-# Minimum interval between donations (days) per Use Case 2 alt flow 2
-MIN_DONATION_INTERVAL = 90
+
 
 
 def _row_to_user(row):
@@ -74,7 +73,7 @@ class DBManager:
         self._seed_test_data()
         self._load_notifications()
 
-    # ---------- LOAD ----------
+
 
     def _load_from_db(self):
         for row in self.db.load_users():
@@ -222,7 +221,7 @@ class DBManager:
             admin.admin_id = uid
             self.admins.append(admin)
 
-    # ---------- LOOKUPS ----------
+
 
     def _find_donor_by_id(self, user_id):
         for d in self.donors:
@@ -240,7 +239,7 @@ class DBManager:
         return [h for h in self.hospitals
                 if h.is_certified and not h.is_suspended]
 
-    # ---------- AUTH ----------
+
 
     def authenticate(self, email: str, password: str, role: str):
         if role == "Αιμοδότης":
@@ -258,7 +257,7 @@ class DBManager:
     def email_exists(self, email: str) -> bool:
         return self.db.email_exists(email)
 
-    # ---------- DONOR REGISTRATION ----------
+
 
     def register_donor(self, donor: Donor):
         uid = self.db.insert_user("donor", donor)
@@ -269,7 +268,7 @@ class DBManager:
         self.donors.append(donor)
         return donor
 
-    # ---------- HOSPITAL REGISTRATION ----------
+
 
     def register_hospital(self, hospital: Hospital):
         hospital.is_certified = False
@@ -285,7 +284,7 @@ class DBManager:
     def save_user(self, user):
         self.db.update_user(user.user_id, user)
 
-    # ---------- APPLICATION (FOR CERTIFICATION) ----------
+
 
     def submit_application(self, application: Application, hospital_user_id: int):
         application.hospital_user_id = hospital_user_id
@@ -341,7 +340,6 @@ class DBManager:
                 return app
         return None
 
-    # ---------- REPORTS ----------
 
     def create_report(self, report: Report):
         report.created_at = datetime.now()
@@ -391,7 +389,7 @@ class DBManager:
         user.notifications.clear()
         self.db.clear_notifications_for(user.user_id)
 
-    # ---------- APPOINTMENTS ----------
+
 
     def create_appointment(self, donor: Donor, hospital: Hospital,
                            appt_date: date, time: str):
@@ -427,7 +425,7 @@ class DBManager:
             return earliest
         return None
 
-    # ---------- DONATIONS ----------
+
 
     def record_donation(self, hospital: Hospital, donor: Donor,
                         donation_type: str = "whole_blood"):
@@ -447,7 +445,7 @@ class DBManager:
         hospital.donations.append(donation)
         return donation
 
-    # ---------- MEDICAL DOCUMENTS ----------
+
 
     def save_medical_document(self, donor: Donor, doc: MedicalDocument):
         doc_id = self.db.insert_medical_document(doc, donor.user_id)
@@ -455,7 +453,7 @@ class DBManager:
         donor.medical_history.add_document(doc)
         return doc
 
-    # ---------- CERTIFICATES ----------
+
 
     def save_certificate(self, donor: Donor, certificate: DonationCertificate):
         cid = self.db.insert_certificate(certificate)
@@ -463,7 +461,7 @@ class DBManager:
         donor.add_certificate(certificate)
         return certificate
 
-    # ---------- BLOOD UNITS ----------
+
 
     def save_blood_unit(self, hospital: Hospital, unit: BloodUnit):
         uid = self.db.insert_blood_unit(unit, hospital.user_id)
@@ -479,7 +477,7 @@ class DBManager:
                                              new_status)
         return unit
 
-    # ---------- LISTS ----------
+  
 
     def get_pending_applications(self):
         return [a for a in self.applications
@@ -520,9 +518,9 @@ class DBManager:
             if is_target or is_reporter:
                 seen.add(r.report_id)
                 result.append((r, "target" if is_target else "reporter"))
-        return result  # list of (Report, role_str)
+        return result  
 
-    # ---------- EMERGENCY ALERTS ----------
+
 
     def send_emergency_alert(self, hospital, blood_type: str, required_units: int):
         """Send persistent emergency alert notifications to all matching available donors."""
@@ -549,7 +547,7 @@ class DBManager:
 
         return alert, targets
 
-    # ---------- REPORT RESPONSES ----------
+
 
     def add_report_response(self, report, responder, response_text: str, role: str = ""):
         """Record a clarification response from either the reporter or the reported party."""
@@ -570,13 +568,13 @@ class DBManager:
         for admin in self.admins:
             self._add_notification(admin, msg)
 
-    # ---------- SEED ----------
+
 
     def _seed_test_data(self):
         """Seed a test donor with historical donations so UC3 can be demonstrated."""
         TEST_EMAIL = "test@redhope.gr"
         if self.db.email_exists(TEST_EMAIL):
-            return  # already seeded
+            return 
 
         from datetime import date
         from models import Donor, Donation
@@ -598,7 +596,7 @@ class DBManager:
         self.db.update_user(uid, donor)
         self.donors.append(donor)
 
-        # Insert 3 historical donations
+
         past_dates = [
             date(2025, 5, 1),
             date(2024, 12, 1),
