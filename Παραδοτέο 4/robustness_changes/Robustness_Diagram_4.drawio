@@ -1,0 +1,187 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="6_nKUQg1IdeAzsXl38Od" name="Σελίδα-3">
+    <mxGraphModel dx="1814" dy="743" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-53" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=-0.021;entryY=0.509;entryDx=0;entryDy=0;entryPerimeter=0;" target="EfLVz5EQOBYRSZDClQjA-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-212.9411764705883" y="504.43136776194865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Χρήστης" vertex="1">
+          <mxGeometry height="60" width="30" x="-375" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-4" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Διαχείριση Διαθεσιμότητας&amp;nbsp;" vertex="1">
+          <mxGeometry height="85" width="108" x="-173" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-5" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.017;entryY=0.399;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="EfLVz5EQOBYRSZDClQjA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-11" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.944;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" target="EfLVz5EQOBYRSZDClQjA-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="62.02500000000009" y="148.07899999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-7" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="Εύρεση τρέχουσας κατάστασης χρήστη" vertex="1">
+          <mxGeometry height="80" width="70" x="96" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-8" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="Στοιχεία χρήστη" vertex="1">
+          <mxGeometry height="80" width="80" x="334" y="16.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-9" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.013;entryY=0.481;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="EfLVz5EQOBYRSZDClQjA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-10" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.987;entryY=0.475;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="EfLVz5EQOBYRSZDClQjA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-14" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Τρέχουσα κατάσταση" vertex="1">
+          <mxGeometry height="85" width="108" x="-173" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-18" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Ενημέρωση διαθεσιμότητας" vertex="1">
+          <mxGeometry height="85" width="108" x="-173" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-22" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;exitX=0.908;exitY=0.263;exitDx=0;exitDy=0;exitPerimeter=0;" target="EfLVz5EQOBYRSZDClQjA-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="318.1109999999999" y="540.3725" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-35" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Μύνημα ενημέρωσης" vertex="1">
+          <mxGeometry height="85" width="108" x="-173" y="243" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-50" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.494;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="EfLVz5EQOBYRSZDClQjA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EfLVz5EQOBYRSZDClQjA-51" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.501;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="EfLVz5EQOBYRSZDClQjA-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="επιλέγει" vertex="1">
+          <mxGeometry height="30" width="60" x="-289" y="201" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-2" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="επεξεργασια επιλογής" vertex="1">
+          <mxGeometry height="80" width="70" x="44" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-3" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-14" style="endArrow=classic;html=1;rounded=0;exitX=0.991;exitY=0.494;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.538;entryDx=0;entryDy=0;entryPerimeter=0;" target="g7E_Nuknbeousq4i04LN-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="410" as="sourcePoint" />
+            <mxPoint x="40" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-5" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-2" style="endArrow=classic;html=1;rounded=0;exitX=0.114;exitY=0.813;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.972;entryY=0.353;entryDx=0;entryDy=0;entryPerimeter=0;" target="EfLVz5EQOBYRSZDClQjA-35" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="40" y="353" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-6" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="ενεργοποίηση push norification" vertex="1">
+          <mxGeometry height="99" width="87" x="143" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-7" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-35" style="endArrow=classic;html=1;rounded=0;exitX=0.972;exitY=0.6;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" target="g7E_Nuknbeousq4i04LN-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="40" y="353" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-8" parent="1" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="Βάση δεδομένων" vertex="1">
+          <mxGeometry height="80" width="80" x="338" y="279" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-9" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-6" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.646;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="g7E_Nuknbeousq4i04LN-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="40" y="353" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-10" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-6" style="endArrow=classic;html=1;rounded=0;exitX=0.092;exitY=0.778;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.954;entryY=0.353;entryDx=0;entryDy=0;entryPerimeter=0;" target="EfLVz5EQOBYRSZDClQjA-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="40" y="353" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-11" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-18" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.612;exitDx=0;exitDy=0;exitPerimeter=0;" target="g7E_Nuknbeousq4i04LN-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="63" y="449" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-12" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="στοιχεία χρήστη" vertex="1">
+          <mxGeometry height="80" width="70" x="131" y="417" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-13" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-8" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.886;entryY=0.313;entryDx=0;entryDy=0;entryPerimeter=0;" target="g7E_Nuknbeousq4i04LN-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="40" y="353" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-14" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Προφιλ χρήστη" vertex="1">
+          <mxGeometry height="80" width="100" x="-165" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-15" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-12" style="endArrow=classic;html=1;rounded=0;exitX=0.143;exitY=0.9;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.363;entryDx=0;entryDy=0;entryPerimeter=0;" target="g7E_Nuknbeousq4i04LN-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="603" as="sourcePoint" />
+            <mxPoint x="40" y="553" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=-0.01;entryY=0.525;entryDx=0;entryDy=0;entryPerimeter=0;" target="g7E_Nuknbeousq4i04LN-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-365" y="353" as="sourcePoint" />
+            <mxPoint x="40" y="453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="επιβεβαίωση" vertex="1">
+          <mxGeometry height="30" width="60" x="-292" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-21" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="απενεργοποίηση ειδοποιήσεων" vertex="1">
+          <mxGeometry height="104" width="94" x="150" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-22" edge="1" parent="1" source="EfLVz5EQOBYRSZDClQjA-35" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.435;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.1;entryY=0.738;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="g7E_Nuknbeousq4i04LN-21" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="40" y="353" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-23" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-21" style="endArrow=classic;html=1;rounded=0;exitX=0.872;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.05;entryY=0.694;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="EfLVz5EQOBYRSZDClQjA-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="40" y="353" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-24" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-21" style="endArrow=classic;html=1;rounded=0;exitX=0.957;exitY=0.827;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="g7E_Nuknbeousq4i04LN-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="403" as="sourcePoint" />
+            <mxPoint x="40" y="353" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-25" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Πρόβλημα ενεργοποίησης ειδοποιήσεων" vertex="1">
+          <mxGeometry height="100" width="93" x="282" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-26" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-6" style="endArrow=classic;html=1;rounded=0;exitX=0.897;exitY=0.879;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.171;entryY=0.288;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="g7E_Nuknbeousq4i04LN-25" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="503" as="sourcePoint" />
+            <mxPoint x="40" y="453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-27" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Ενεργοποίηση ειδοποιήσεων" vertex="1">
+          <mxGeometry height="80" width="100" x="-165" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-28" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-25" style="endArrow=classic;html=1;rounded=0;exitX=0.129;exitY=0.83;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="g7E_Nuknbeousq4i04LN-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="495" as="sourcePoint" />
+            <mxPoint x="40" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-29" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=-0.03;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="g7E_Nuknbeousq4i04LN-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-370" y="375" as="sourcePoint" />
+            <mxPoint x="40" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g7E_Nuknbeousq4i04LN-30" edge="1" parent="1" source="g7E_Nuknbeousq4i04LN-27" style="endArrow=classic;html=1;rounded=0;entryX=0.287;entryY=0.97;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" target="g7E_Nuknbeousq4i04LN-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-10" y="495" as="sourcePoint" />
+            <mxPoint x="40" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
