@@ -28,7 +28,6 @@ class UploadFrame(tk.Frame):
                  font=title_font, bg=light_green, fg=dark_text,
                  justify="center").pack(pady=(30, 10))
 
-        # File picker button
         select_btn = tk.Button(
             self, text="Επιλογή Αρχείου",
             command=self.select_file,
@@ -43,7 +42,6 @@ class UploadFrame(tk.Frame):
                  font=small_font, bg=light_green, fg=mid_text,
                  wraplength=360).pack()
 
-        # File info card
         self.file_card = tk.Frame(self, bg=card_green)
         self.file_card.pack(padx=30, fill="x", ipady=8, pady=14)
 
@@ -63,13 +61,13 @@ class UploadFrame(tk.Frame):
             font=normal_font, bg=card_green, fg=dark_text, anchor="w")
         self.file_size_label.pack(pady=(2, 10), padx=14, anchor="w")
 
-        # Upload button (disabled until a file is selected)
+
         self.upload_btn = simple_button(
             self, "Μεταφόρτωση Εγγράφου", self.upload_file)
         self.upload_btn.pack(pady=(4, 10))
         self.upload_btn.config(state="disabled", bg=mid_text)
 
-        # Document list
+
         tk.Label(self, text="Ιατρικά Έγγραφα:",
                  font=subtitle_font, bg=light_green,
                  fg=dark_text).pack(pady=(10, 4))
@@ -81,7 +79,6 @@ class UploadFrame(tk.Frame):
         simple_button(self, "<- Επιστροφή", self.go_back,
                       color=mid_text).pack(pady=16)
 
-    # ------------------------------------------------------------------
 
     def select_file(self):
         path = filedialog.askopenfilename(
@@ -129,7 +126,7 @@ class UploadFrame(tk.Frame):
         )
         DBManager().save_medical_document(self.donor, doc)
 
-        # Reset UI
+ 
         self.selected_file_path = None
         self.file_name_label.config(text="Όνομα: —")
         self.file_type_label.config(text="Τύπος: —")
@@ -156,7 +153,6 @@ class UploadFrame(tk.Frame):
             row.columnconfigure(0, weight=1)
             row.columnconfigure(1, weight=0)
 
-            # Truncate very long filenames in the display
             display_name = (doc.filename[:30] + "…"
                             if len(doc.filename) > 30 else doc.filename)
             tk.Label(row, text=f"  {display_name}",
