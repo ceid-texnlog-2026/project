@@ -11,10 +11,6 @@ from config import (light_green, card_green, dark_green, dark_text,
 from widgets import simple_button
 
 
-# ------------------------------------------------------------------
-# Helpers
-# ------------------------------------------------------------------
-
 def _open_file(path: str):
     """Open a file with the OS default application."""
     try:
@@ -28,7 +24,6 @@ def _open_file(path: str):
         messagebox.showerror("Σφάλμα", f"Αδυναμία ανοίγματος αρχείου:\n{exc}")
 
 
-# Map internal donation_type codes → Greek display labels
 DONATION_TYPE_LABELS = {
     "whole_blood": "Ολικό αίμα",
     "plasma":      "Πλάσμα",
@@ -50,10 +45,6 @@ def _fmt_date(d) -> str:
 def _donation_type_label(raw: str) -> str:
     return DONATION_TYPE_LABELS.get(raw or "", raw or "—")
 
-
-# ------------------------------------------------------------------
-# Entry builder
-# ------------------------------------------------------------------
 
 def _build_entries(donor):
     """Unified list of dicts from donor.donations + completed appointments.
@@ -89,10 +80,6 @@ def _build_entries(donor):
     return entries
 
 
-# ==================================================================
-# HistoryFrame — scrollable list of all donations
-# ==================================================================
-
 class HistoryFrame(tk.Frame):
     def __init__(self, master, donor):
         super().__init__(master, bg=light_green)
@@ -106,8 +93,7 @@ class HistoryFrame(tk.Frame):
                  bg=light_green, fg=dark_text).pack(pady=(30, 6))
 
         entries = _build_entries(self.donor)
-
-        # Statistics card
+      
         stats = tk.Frame(self, bg=card_green)
         stats.pack(padx=30, fill="x", ipady=8, pady=(0, 10))
         tk.Label(stats,
@@ -117,7 +103,6 @@ class HistoryFrame(tk.Frame):
         tk.Label(stats, text=f"Τελευταία: {last_str}",
                  font=normal_font, bg=card_green, fg=mid_text).pack(pady=(0, 10))
 
-        # List
         if not entries:
             tk.Label(self,
                      text="Δεν υπάρχει ακόμα διαθέσιμο\nιστορικό αιμοδοσιών.",
@@ -133,7 +118,6 @@ class HistoryFrame(tk.Frame):
             for entry in entries:
                 self._make_row(list_frame, entry)
 
-        # Certificates section
         self._build_certificates_section()
 
         simple_button(self, "<- Επιστροφή", self.go_back,
@@ -144,11 +128,11 @@ class HistoryFrame(tk.Frame):
         row = tk.Frame(parent, bg=card_green, cursor="hand2")
         row.pack(fill="x", pady=3, ipady=0)
 
-        # Use grid inside the row for clean two-column layout
+
         row.columnconfigure(0, weight=1)
         row.columnconfigure(1, weight=0)
 
-        # Left block — two lines
+
         left = tk.Frame(row, bg=card_green)
         left.grid(row=0, column=0, sticky="w", padx=8, pady=6)
 
@@ -162,11 +146,10 @@ class HistoryFrame(tk.Frame):
                  font=small_font, bg=card_green,
                  fg=mid_text, anchor="w").pack(anchor="w")
 
-        # Right arrow
+    
         tk.Label(row, text="›", font=("Arial", 18, "bold"),
                  bg=card_green, fg=mid_text).grid(row=0, column=1, padx=10)
 
-        # Bindings — click anywhere on the row
         cmd = lambda e, en=entry: self.show_details(en)
         row.bind("<Button-1>", cmd)
         for w in row.winfo_children():
