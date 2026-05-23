@@ -19,7 +19,7 @@ class AvailabilityFrame(tk.Frame):
         tk.Label(self, text="Διαθεσιμότητα", font=title_font,
                  bg=light_green, fg=dark_text).pack(pady=(40, 20))
 
-        # Κάρτα τρέχουσας κατάστασης
+        # othoni trexousas katastasis
         self.status_card = tk.Frame(self, bg=card_green)
         self.status_card.pack(padx=40, fill="x", ipady=20, pady=10)
 
@@ -31,7 +31,7 @@ class AvailabilityFrame(tk.Frame):
 
         self.update_status_label()
 
-        # Ενημερωτικό μήνυμα
+        # mhnuma emfanishs status
         info = tk.Frame(self, bg=card_green)
         info.pack(padx=40, fill="x", ipady=10, pady=6)
         tk.Label(info, text="Αν είσαι διαθέσιμος, θα λαμβάνεις\nειδοποιήσεις σε περίπτωση επείγουσας\nανάγκης αίματος.",
