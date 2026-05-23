@@ -20,9 +20,6 @@ class CreateReportScreen(tk.Frame):
         self.db = DBManager()
         self.build()
 
-    # ------------------------------------------------------------------
-    # Helpers
-    # ------------------------------------------------------------------
 
     def _reporter_id(self):
         return getattr(self.user, "volunteer_id", None) or self.user.user_id
@@ -39,10 +36,6 @@ class CreateReportScreen(tk.Frame):
             self.master.show_donor(self.user)
         else:
             self.master.show_hospital(self.user)
-
-    # ------------------------------------------------------------------
-    # Build
-    # ------------------------------------------------------------------
 
     def build(self):
         set_background(self)
@@ -64,7 +57,6 @@ class CreateReportScreen(tk.Frame):
                      values=["Αιμοδότης", "Νοσοκομείο"],
                      state="readonly", width=20).pack(pady=4)
 
-        # Target identifier
         tk.Label(self, text="Στοιχείο αναγνώρισης (email / ΑΜΚΑ / όνομα):",
                  font=small_font, bg=light_green, fg=mid_text,
                  wraplength=320).pack(pady=(8, 0))
@@ -73,7 +65,6 @@ class CreateReportScreen(tk.Frame):
                                   insertbackground=dark_text)
         self.target_id.pack(pady=4, ipady=5)
 
-        # Description
         tk.Label(self, text="Περιγραφή:", font=small_font,
                  bg=light_green, fg=mid_text).pack(pady=(8, 0))
         self.description = tk.Text(self, font=normal_font, height=7, width=34,
@@ -84,10 +75,6 @@ class CreateReportScreen(tk.Frame):
         simple_button(self, "Υποβολή Αναφοράς", self.submit).pack(pady=14)
         simple_button(self, "<- Επιστροφή", self._go_back,
                       color=mid_text).pack()
-
-    # ------------------------------------------------------------------
-    # Submit
-    # ------------------------------------------------------------------
 
     def submit(self):
         target = self.target_id.get().strip()
