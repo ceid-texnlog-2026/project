@@ -128,7 +128,7 @@ class HospitalCertificationApplicationScreen(tk.Frame):
     def pick_files(self):
         paths = filedialog.askopenfilenames(
             title="Επιλογή Δικαιολογητικών",
-            filetypes=[("Έγγραφα", "*.pdf *.jpg *.jpeg *.png")],
+            filetypes=[("Έγγραφα", "*.pdf *.jpg *.jpeg *.png"), ("Όλα τα αρχεία", "*.*")],
         )
         if not paths:
             return
