@@ -236,6 +236,12 @@ class ReportJustificationScreen(tk.Frame):
             messagebox.showwarning("Σφάλμα", "Εισάγετε αιτιολόγηση.")
             return
 
+        if len(justification) < 10:
+            messagebox.showwarning("Σφάλμα", "Η αιτιολόγηση πρέπει να είναι τουλάχιστον 10 χαρακτήρες.")
+            return
+
+      
+
         confirmed = messagebox.askyesno(
             "Επιβεβαίωση",
             f"Επιβεβαίωση απόφασης;\n\nΑιτιολόγηση: {justification}"
